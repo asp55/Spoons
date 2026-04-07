@@ -40,6 +40,12 @@
     "type": "Module"
   },
   {
+    "desc": "An hs.screen object to use as a reference for brightness changes. Defaults to `hs.screen.allScreens()[1]`",
+    "module": "AllBrightness",
+    "name": "referenceScreen",
+    "type": "Variable"
+  },
+  {
     "desc": "Simple spoon for launching apps with single letter hotkeys.",
     "name": "AppLauncher",
     "type": "Module"
@@ -322,6 +328,12 @@
     "desc": "A table in conformance with the [hs.alert.defaultStyle](http://www.hammerspoon.org/docs/hs.alert.html#defaultStyle[]) format that specifies the style used by the alerts. Default value: `{ textFont = \"Courier New\", textSize = 14, radius = 10 }`",
     "module": "BrewInfo",
     "name": "brew_info_style",
+    "type": "Variable"
+  },
+  {
+    "desc": "A string specifying the path to the `brew` executable. Defaults to `/usr/local/bin/brew`",
+    "module": "BrewInfo",
+    "name": "brew_path",
     "type": "Variable"
   },
   {
@@ -2136,6 +2148,12 @@
     "type": "Variable"
   },
   {
+    "desc": "Size of the on-screen margin to place off-screen windows",
+    "module": "PaperWM",
+    "name": "window_ratios",
+    "type": "Variable"
+  },
+  {
     "desc": "Adds a window to layout and tiles.",
     "module": "PaperWM",
     "name": "addWindow",
@@ -2169,6 +2187,12 @@
     "desc": "Change focus to a nearby window",
     "module": "PaperWM",
     "name": "focusWindow",
+    "type": "Method"
+  },
+  {
+    "desc": "Switch to a Mission Control space to the left or right of current space",
+    "module": "PaperWM",
+    "name": "incrementSpace",
     "type": "Method"
   },
   {
@@ -2241,6 +2265,12 @@
     "desc": "Tile all windows within a space",
     "module": "PaperWM",
     "name": "tileSpace",
+    "type": "Method"
+  },
+  {
+    "desc": "Add or remove focused window from the floating layer and retile the space",
+    "module": "PaperWM",
+    "name": "toggleFloating",
     "type": "Method"
   },
   {
@@ -2744,6 +2774,12 @@
     "desc": "",
     "module": "Seal.plugins.pasteboard",
     "name": "saveHistory",
+    "type": "Variable"
+  },
+  {
+    "desc": "",
+    "module": "Seal.plugins.pasteboard",
+    "name": "skipUTIs",
     "type": "Variable"
   },
   {
@@ -4010,6 +4046,35 @@
     "desc": "Undo the last window manipulation. Only those \"moveAndResize\" manipulations can be undone.",
     "module": "WinWin",
     "name": "undo",
+    "type": "Method"
+  },
+  {
+    "desc": "Display UTC time in the menu bar",
+    "name": "ZeroOffset",
+    "type": "Module"
+  },
+  {
+    "desc": "Binds hotkeys for ZeroOffset",
+    "module": "ZeroOffset",
+    "name": "bindHotkeys",
+    "type": "Method"
+  },
+  {
+    "desc": "Initial setup for ZeroOffset",
+    "module": "ZeroOffset",
+    "name": "init",
+    "type": "Method"
+  },
+  {
+    "desc": "Starts ZeroOffset",
+    "module": "ZeroOffset",
+    "name": "start",
+    "type": "Method"
+  },
+  {
+    "desc": "Stops ZeroOffset",
+    "module": "ZeroOffset",
+    "name": "stop",
     "type": "Method"
   }
 ]
